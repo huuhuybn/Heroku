@@ -1,0 +1,22 @@
+<body class="container">
+<ul class="list-group">
+    {{#each data}}
+        <div class="card mt-2">
+            <div class="card-header">
+                Item ID : {{this._id}}
+            </div>
+            <div class="card-img-top">
+                <img src="{{this.img}}" height="100%" width="100%">
+            </div>
+            <div class="card-body ">
+                <h5 class="card-title">{{this.title}}</h5>
+                <p class="card-text">{{this.description}}</p>
+                <a href="/editItem/{{this._id}}" class="btn btn-primary">Edit</a>
+                <a href="/deleteItem/{{this._id}}" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    {{else}}
+        <p class="empty">No content</p>
+    {{/each}}
+</ul>
+

@@ -1,0 +1,25 @@
+{
+  "name": "com.dotplays",
+  "version": "1.0.0",
+  "description": "Day la du an toi tu code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "abc",
+    "fdj"
+  ],
+  "author": "Huy Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.9",
+    "mongoose-gen": "^2.1.1",
+    "multer": "^1.4.2",
+    "body-parser": "latest"
+  },
+  "devDependencies": {
+    "express-handlebars": "^3.1.0"
+  }
+}

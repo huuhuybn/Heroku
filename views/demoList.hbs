@@ -1,0 +1,13 @@
+<div class="container">
+
+    <ul class="list-group">
+        <!--        data là biến truyền từ express, this là 1 phần tử trong mảng, each là từ khóa tương tự for, while-->
+        {{#each data}}
+            <div>{{this._id}}</div>
+            <div>{{this.title}}</div>
+
+        {{/each}}
+    </ul>
+
+
+</div>

@@ -1,0 +1,38 @@
+<div class="container">
+
+    {{#if error}}
+        <h1 class="mt-5">{{error}}</h1>
+    {{/if}}
+
+    <form action="/addItem" method="post" enctype="multipart/form-data">
+
+        <div class="input-group mt-5">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="">Title : </span>
+            </div>
+            <input type="text" class="form-control" name="title">
+
+        </div>
+        <div class="input-group mt-5">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="">Description : </span>
+            </div>
+            <input type="text" class="form-control" name="description">
+
+        </div>
+        <div class="input-group mt-5">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="">Time : </span>
+            </div>
+            <input type="text" class="form-control" name="time">
+
+        </div>
+
+        <input name="avatar" type="file" class="mt-5 border col-md-12" multiple>
+
+
+        <button type="submit" class="btn btn-success col-md-12 mt-5">Save</button>
+    </form>
+
+
+</div>
